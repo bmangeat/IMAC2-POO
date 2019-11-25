@@ -38,6 +38,8 @@ class Point3D{
                      m_z + pt.m_y);
     }
 
+/* /!\/!\/!\/!\/!\/!\/!\/!\/!\ NEED TO FIX /!\/!\/!\/!\/!\/!\/!\/!\ */
+    
     Point3D &operator+(const T &x, const T &y, const T &z){
       return Point3D(m_x + x,
                      m_y + y,
