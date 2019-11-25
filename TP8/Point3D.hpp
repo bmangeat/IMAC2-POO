@@ -39,14 +39,18 @@ class Point3D{
     }
 
 /* /!\/!\/!\/!\/!\/!\/!\/!\/!\ NEED TO FIX /!\/!\/!\/!\/!\/!\/!\/!\ */
-    
+
     Point3D &operator+(const T &x, const T &y, const T &z){
       return Point3D(m_x + x,
                      m_y + y,
                      m_z + z);
     }
 
-    Point3D &operator<<()
+    friend ostream &operator<<(ostream &o, const Point3D<T> &pt)
+    {
+      o << "(" << pt.m_x << ", "<< pt.m_y << ", "<< pt.m_y << ")";
+      return o;
+    }
 
 /*
     template<typename U>
