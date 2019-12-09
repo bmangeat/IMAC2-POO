@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/brice/Documents/COURS/IMAC2/Programmation Objet/IMAC2-POO/TD11/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+numeric
+-
+
